@@ -1,5 +1,4 @@
 body {
-  background-size: cover;
   background-color: black;
 }
 
@@ -9,7 +8,6 @@ body #header #top {
 
 body #header #navi {
   background-color: black;
-  position: relative;
 }
 
 body #header #navi #myNavbar {
