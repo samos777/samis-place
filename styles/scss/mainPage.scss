@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/beer-machine-alcohol.jpeg");
+  /*background-image: url("../images/beer-machine-alcohol.jpeg");*/
+  background-size: cover;
 
   #header {
 
@@ -26,6 +27,16 @@ body {
       }
     }
   }
+
+  #wrapper{
+
+    margin: 0 auto;
+
+  }
+
+
+
+
 }
 
 

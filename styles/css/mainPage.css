@@ -1,5 +1,6 @@
 body {
-  background-image: url("../images/beer-machine-alcohol.jpeg");
+  /*background-image: url("../images/beer-machine-alcohol.jpeg");*/
+  background-size: cover;
 }
 
 body #header #top {
@@ -19,4 +20,8 @@ body #header #myNavbar {
 body #header #myNavbar #navContents {
   text-align: center;
   position: relative;
+}
+
+body #wrapper {
+  margin: 0 auto;
 }
