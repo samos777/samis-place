@@ -27,6 +27,15 @@ body #header #navi #myNavbar #navContents {
   max-height: 800px;
 }
 
+#eventBar .row .col-xs-3 .eventBarTitle {
+  color: whitesmoke;
+}
+
+#eventBar .row .col-xs-3 .eventImg {
+  max-height: 200px;
+  max-width: 200px;
+}
+
 @media only screen and (max-width: 600px) {
   #forSlider {
     display: none;
