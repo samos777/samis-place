@@ -1,6 +1,7 @@
 body {
-  /*background-image: url("../images/beer-machine-alcohol.jpeg");*/
+  //background-image: url("../images/beer-machine-alcohol.jpeg");
   background-size: cover;
+  background-color: black;
 
   #header {
 
@@ -30,15 +31,30 @@ body {
 
   #wrapper{
 
-    margin: 0 auto;
+
 
   }
 
 
+/*
+  .mySlider{
+
+    img{
+      min-width: 90%;
+      &:hover{
+      }
+    }
+
+  }
 
 
+*/
 }
 
+@media only screen and (max-width: 600px) {
 
-
+  #forSlider{
+    width: 0px;
+  }
+}
 
