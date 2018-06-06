@@ -5,12 +5,14 @@
 function initSlider(){
     $('.mySlider').slick({
         dots:true,
-        arrow:false,
+        arrows:false,
         autoplay:true,
-        autoplaySpeed:1500,
+        autoplaySpeed:2500,
         infinite: true,
         fade: true,
+        pauseOnHover:false,
         centerMode: true,
+
         responsive: [
             {
                 breakpoint: 1024,

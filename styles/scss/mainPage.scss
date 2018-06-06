@@ -6,55 +6,52 @@ body {
   #header {
 
     #top {
-      border: solid orangered 1px;
-      color: orange;
+
 
       text-align: center;
 
-      h1 {
 
-        a{
-          color: green;
+    }
+
+    #navi {
+
+      background-color: black;
+      position: relative;
+
+      #myNavbar {
+        font-size: 140%;
+        background-color: transparent;
+        #navContents {
+          text-align: center;
+          position: relative;
         }
       }
-
-    }
-    #myNavbar {
-      font-size: 130%;
-
-      #navContents {
-        text-align: center;
-        position: relative;
-      }
     }
   }
-
-  #wrapper{
-
-
-
-  }
-
-
-/*
-  .mySlider{
-
-    img{
-      min-width: 90%;
-      &:hover{
-      }
-    }
-
-  }
-
-
-*/
 }
+
+
+.mySlider{
+
+  img{
+    max-width: 900px;
+    max-height: 800px;
+    &:hover{
+    }
+  }
+
+}
+
+
+
+
 
 @media only screen and (max-width: 600px) {
 
+
+
   #forSlider{
-    width: 0px;
+    display: none;
   }
 }
 
