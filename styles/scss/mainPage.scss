@@ -1,0 +1,33 @@
+body {
+  background-image: url("../images/beer-machine-alcohol.jpeg");
+
+  #header {
+
+    #top {
+      border: solid orangered 1px;
+      color: orange;
+
+      text-align: center;
+
+      h1 {
+
+        a{
+          color: green;
+        }
+      }
+
+    }
+    #myNavbar {
+      font-size: 130%;
+
+      #navContents {
+        text-align: center;
+        position: relative;
+      }
+    }
+  }
+}
+
+
+
+
