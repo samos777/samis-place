@@ -13,22 +13,19 @@ Menu = {
                     {
                         name:"Home fries ",
                         description: "Home fries with chili sauce. ",
-                        price:15,
-                        currency:"$"
+                        price:15
                     },
 
                     {
                         name:"Little Hot Dogs ",
                         description: "Deep fried hot dogs ",
-                        price:8,
-                        currency:"$"
+                        price:8
                     },
 
                     {
                         name:"Hot Wings ",
                         description: "12 hot chiken wing with chili sauce ",
-                        price:10,
-                        currency:"$"
+                        price:10
                     }
                 ]
             },
@@ -38,22 +35,19 @@ Menu = {
                     {
                         name:"Sami's Burger ",
                         description: "A great piece of meat envelopped by the best bread from our local baker with a side dish. ",
-                        price:35,
-                        currency:"$"
+                        price:35
                     },
 
                     {
                         name:"Sami's Sausage ",
                         description: "3 big sausages of fresh lamb meat with a side dish. ",
-                        price:35,
-                        currency:"$"
+                        price:35
                     },
 
                     {
                         name:"Sami's Special Salad ",
                         description:"Chicken Breast, Lettuce, Tomatos, Cucumbers, Onions, Mushrooms with a bun of bread. ",
-                        price:35,
-                        currency:"$"
+                        price:35
                     }
                 ]
             },
@@ -63,15 +57,13 @@ Menu = {
                     {
                         name:"Tiramissu ",
                         description: "Something sweet. ",
-                        price:20,
-                        currency:"$"
+                        price:20
                     },
 
                     {
                         name:"Soufle ",
                         description: "Something with chocolate. ",
-                        price:22,
-                        currency:"$"
+                        price:22
                     }
                 ]
             },
@@ -81,22 +73,19 @@ Menu = {
                     {
                         name:"Coca Cola/Diet/Zero ",
                         description: "",
-                        price:6,
-                        currency:"$"
+                        price:6
                     },
 
                     {
                         name:"Sprite/Zero ",
                         description: "",
-                        price:6,
-                        currency:"$"
+                        price:6
                     },
 
                     {
                         name:"Flat/Sparkling Water ",
                         description: "",
                         price:3,
-                        currency:"$"
                     }
                 ]
             }
@@ -106,33 +95,37 @@ Menu = {
         //print to the HTML the Menu Content
         for(var dishType in Menu.categories)
         {
-            //  print title
-            var typeContainer = document.createElement('div');
-            var t = document.createTextNode(Menu.categories[dishType].title);     // Create a text node
-            typeContainer.appendChild(t);
-
-            document.body.appendChild(typeContainer)
+            this.buildTitle(dishType);
 
             for(var i = 0; i<Menu.categories[dishType].data.length; i++ )
             {
                 var dishContainer = document.createElement('li');
-                var n = document.createTextNode(Menu.categories[dishType].data[i].name);     // Create a text node
-                var d = document.createTextNode(Menu.categories[dishType].data[i].description);     // Create a text node
-                var p = document.createTextNode(Menu.categories[dishType].data[i].price);     // Create a text node
-                var c = document.createTextNode(Menu.categories[dishType].data[i].currency);     // Create a text node
 
-                dishContainer.appendChild(n);
-                dishContainer.appendChild(d);
-                dishContainer.appendChild(p);
-                dishContainer.appendChild(c);
+                this.buildLine(dishContainer,dishType, i)
+
                 document.body.appendChild(dishContainer)
             }
         }
+    },
+
+
+    'buildTitle':function(dishType)
+    {
+        var typeContainer = document.createElement('div');
+        var t = document.createTextNode(Menu.categories[dishType].title);     // Create a text node
+        typeContainer.appendChild(t);
+
+        document.body.appendChild(typeContainer)
+    },
+
+    'buildLine':function(dishContainer, dishType, i)
+    {
+        var n = document.createTextNode(Menu.categories[dishType].data[i].name + " - " +
+                                        Menu.categories[dishType].data[i].description  + " - " +
+                                        Menu.categories[dishType].data[i].price + "$");
+
+        dishContainer.appendChild(n);
     }
 
-
-
-
 }
-
 

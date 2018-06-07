@@ -2,5 +2,10 @@
  * Created by compie on 06/06/18.
  */
 $(document).ready(function(){
-    initSlider();
+    if(typeof initSlider !== 'undefined'){
+        initSlider();
+    }
+    if(typeof Menu !== 'undefined'){
+        Menu.buildMenu();
+    }
 })
