@@ -8,25 +8,25 @@
 Menu = {
     categories: {
             firsts: {
-                title:"Appetizers",
+                title:"Appetizers ",
                 data: [
                     {
-                        name:"Home fries",
-                        decription: "Home fries with chili sauce.",
+                        name:"Home fries ",
+                        description: "Home fries with chili sauce. ",
                         price:15,
                         currency:"$"
                     },
 
                     {
-                        name:"Little Hot Dogs",
-                        decription: "Hot dogs",
+                        name:"Little Hot Dogs ",
+                        description: "Deep fried hot dogs ",
                         price:8,
                         currency:"$"
                     },
 
                     {
-                        name:"Hot Wings",
-                        decription: "12 hot chiken wing with chili sauce",
+                        name:"Hot Wings ",
+                        description: "12 hot chiken wing with chili sauce ",
                         price:10,
                         currency:"$"
                     }
@@ -36,22 +36,22 @@ Menu = {
                 title:"Main Courses",
                 data: [
                     {
-                        name:"Sami's Burger",
-                        decription: "A great piece of meat envelopped by the best bread from our local baker with a side dish.",
+                        name:"Sami's Burger ",
+                        description: "A great piece of meat envelopped by the best bread from our local baker with a side dish. ",
                         price:35,
                         currency:"$"
                     },
 
                     {
-                        name:"Sami's Sausage",
-                        decription: "3 big sausages of fresh lamb meat with a side dish.",
+                        name:"Sami's Sausage ",
+                        description: "3 big sausages of fresh lamb meat with a side dish. ",
                         price:35,
                         currency:"$"
                     },
 
                     {
-                        name:"Sami's Special Salad",
-                        decription: "Chicken Breast, Lettuce, Tomatos, Cucumbers, Onions, Mushrooms with a bun of bread.",
+                        name:"Sami's Special Salad ",
+                        description:"Chicken Breast, Lettuce, Tomatos, Cucumbers, Onions, Mushrooms with a bun of bread. ",
                         price:35,
                         currency:"$"
                     }
@@ -61,15 +61,15 @@ Menu = {
                 title:"Something Sweet",
                 data: [
                     {
-                        name:"Tiramissu",
-                        decription: "Something sweet.",
+                        name:"Tiramissu ",
+                        description: "Something sweet. ",
                         price:20,
                         currency:"$"
                     },
 
                     {
-                        name:"Soufle",
-                        decription: "Something with chocolate.",
+                        name:"Soufle ",
+                        description: "Something with chocolate. ",
                         price:22,
                         currency:"$"
                     }
@@ -79,39 +79,60 @@ Menu = {
                 title:"Soft Drinks",
                 data: [
                     {
-                        name:"Coca Cola/Diet/Zero",
-                        decription: "",
+                        name:"Coca Cola/Diet/Zero ",
+                        description: "",
                         price:6,
                         currency:"$"
                     },
 
                     {
-                        name:"Sprite/Zero",
-                        decription: "",
+                        name:"Sprite/Zero ",
+                        description: "",
                         price:6,
                         currency:"$"
                     },
 
                     {
-                        name:"Flat/Sparkling Water",
-                        decription: "",
+                        name:"Flat/Sparkling Water ",
+                        description: "",
                         price:3,
                         currency:"$"
                     }
                 ]
             }
     },
-    menuBuild: function() {
-        //TODO: print to the HTML the Menu Content
-        for(var dishType in Menu.categories){
-            // TODO: print title
-            Menu.categories[dishType].title
-            for(var i=0; i<Menu.categories[dishType].data.length; i++ ){
-                // TODO: print dish
-                Menu.categories[dishType].data[i]
+
+    'buildMenu':function(){
+        //print to the HTML the Menu Content
+        for(var dishType in Menu.categories)
+        {
+            //  print title
+            var typeContainer = document.createElement('div');
+            var t = document.createTextNode(Menu.categories[dishType].title);     // Create a text node
+            typeContainer.appendChild(t);
+
+            document.body.appendChild(typeContainer)
+
+            for(var i = 0; i<Menu.categories[dishType].data.length; i++ )
+            {
+                var dishContainer = document.createElement('li');
+                var n = document.createTextNode(Menu.categories[dishType].data[i].name);     // Create a text node
+                var d = document.createTextNode(Menu.categories[dishType].data[i].description);     // Create a text node
+                var p = document.createTextNode(Menu.categories[dishType].data[i].price);     // Create a text node
+                var c = document.createTextNode(Menu.categories[dishType].data[i].currency);     // Create a text node
+
+                dishContainer.appendChild(n);
+                dishContainer.appendChild(d);
+                dishContainer.appendChild(p);
+                dishContainer.appendChild(c);
+                document.body.appendChild(dishContainer)
             }
         }
-    },
+    }
+
+
+
+
 }
 
 
