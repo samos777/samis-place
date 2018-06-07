@@ -1,23 +1,28 @@
 body {
+  padding: 0px;
   background-color: black;
 }
 
-body #header #top {
+body #header #logo {
   text-align: center;
+  padding-top: 2.5%;
 }
 
-body #header #navi {
-  background-color: black;
-}
-
-body #header #navi #myNavbar {
-  font-size: 140%;
+body #navCont #myNav {
   background-color: transparent;
+  border: none;
 }
 
-body #header #navi #myNavbar #navContents {
+body #navCont #myNav #myNavbar {
+  float: none;
   text-align: center;
-  position: relative;
+}
+
+body #navCont #myNav #myNavbar #navList {
+  font-size: 140%;
+  background-color: black;
+  display: inline-block;
+  float: none;
 }
 
 .mySlider img {

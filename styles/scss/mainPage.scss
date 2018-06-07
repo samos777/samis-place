@@ -1,29 +1,55 @@
 body {
-
+  padding: 0px;
   background-color: black;
 
   #header {
 
-    #top {
+    #logo {
       text-align: center;
-
+      padding-top: 2.5%;
 
     }
+  }
+  #navCont{
 
-    #navi {
-      background-color: black;
+    #myNav{
+      background-color: transparent;
+      border:none;
 
-      #myNavbar {
-        font-size: 140%;
-        background-color: transparent;
 
-        #navContents {
-          text-align: center;
-          position: relative;
+      #myNavbar{
+        float:none;
+        text-align: center;
+
+        #navList{
+          font-size: 140%;
+          background-color: black;
+          display:inline-block;
+          float:none;
+
+
+
         }
       }
     }
   }
+
+
+    //
+    //#navi {
+    //  background-color: black;
+    //
+    //  #myNavbar {
+    //    font-size: 140%;
+    //    background-color: transparent;
+    //
+    //    #navContents {
+    //      text-align: center;
+    //      position: relative;
+  //    }
+  //    }
+  //  }
+  //}
 }
 
 
@@ -64,12 +90,7 @@ body {
 
 
 
-
-
-
 @media only screen and (max-width: 600px) {
-
-
 
   #forSlider{
     display: none;
