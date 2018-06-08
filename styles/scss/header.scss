@@ -1,0 +1,40 @@
+body {
+  padding: 0px;
+  background-color: black;
+
+  #header {
+
+    #logo {
+      text-align: center;
+      padding-top: 2.5%;
+
+    }
+  }
+
+
+}
+
+
+
+#navCont {
+
+  #myNav {
+    background-color: transparent;
+    border: none;
+
+    #myNavbar {
+      float: none;
+      text-align: center;
+
+      #navList {
+        font-size: 140%;
+        background-color: black;
+        display: inline-block;
+        float: none;
+        font-family: 'Yatra One', cursive;
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+body {
+  padding: 0px;
+  background-color: black;
+}
+
+body #header #logo {
+  text-align: center;
+  padding-top: 2.5%;
+}
+
+#navCont #myNav {
+  background-color: transparent;
+  border: none;
+}
+
+#navCont #myNav #myNavbar {
+  float: none;
+  text-align: center;
+}
+
+#navCont #myNav #myNavbar #navList {
+  font-size: 140%;
+  background-color: black;
+  display: inline-block;
+  float: none;
+  font-family: 'Yatra One', cursive;
+}

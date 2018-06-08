@@ -12,19 +12,19 @@ Menu = {
                 data: [
                     {
                         name:"Home fries ",
-                        description: "Home fries with chili sauce. ",
+                        description: "Home fries with chili sauce.Salami meatloaf fatback, jowl sausage hamburger filet mignon.",
                         price:15
                     },
 
                     {
                         name:"Little Hot Dogs ",
-                        description: "Deep fried hot dogs ",
+                        description: "Deep fried hot dogs Prosciutto fatback sausage burgdoggen buffalo capicola turducken leberkas short ribs.",
                         price:8
                     },
 
                     {
                         name:"Hot Wings ",
-                        description: "12 hot chiken wing with chili sauce ",
+                        description: "12 hot chiken wing with chili sauce Kevin meatball short ribs, meatloaf ",
                         price:10
                     }
                 ]
@@ -61,7 +61,7 @@ Menu = {
                     },
 
                     {
-                        name:"Soufle ",
+                        name:"Souffle ",
                         description: "Something with chocolate. ",
                         price:22
                     }
@@ -91,6 +91,8 @@ Menu = {
             }
     },
 
+    //functions
+
     'buildMenu':function(){
         //print to the HTML the Menu Content
         for(var dishType in Menu.categories)
@@ -99,33 +101,70 @@ Menu = {
 
             for(var i = 0; i<Menu.categories[dishType].data.length; i++ )
             {
-                var dishContainer = document.createElement('li');
-
+                var dishContainer = document.createElement('div');
+                dishContainer.className = "dishCont";
                 this.buildLine(dishContainer,dishType, i)
 
-                document.body.appendChild(dishContainer)
+                // document.body.appendChild(dishContainer)
+                $( "#menuContainer" ).append( $( dishContainer ) );
+                this.buildBR();
             }
         }
     },
 
 
-    'buildTitle':function(dishType)
-    {
-        var typeContainer = document.createElement('div');
-        var t = document.createTextNode(Menu.categories[dishType].title);     // Create a text node
-        typeContainer.appendChild(t);
 
-        document.body.appendChild(typeContainer)
+    'buildHR':function(){
+        var line = document.createElement("HR");
+        //document.body.appendChild(line) ;
+        $( "#menuContainer" ).append( $( line ) );
     },
 
-    'buildLine':function(dishContainer, dishType, i)
+
+
+    'buildBR':function(){
+        var line = document.createElement("BR");
+        // document.body.appendChild(line) ;
+        $( "#menuContainer" ).append( $( line ) );
+        },
+
+
+
+    'buildTitle':function(_dishType)
     {
-        var n = document.createTextNode(Menu.categories[dishType].data[i].name + " - " +
-                                        Menu.categories[dishType].data[i].description  + " - " +
-                                        Menu.categories[dishType].data[i].price + "$");
+        var typeContainer = document.createElement('div');
+        typeContainer.className="category";
+        var t = document.createTextNode(Menu.categories[_dishType].title);     // Create a text node
+        typeContainer.appendChild(t);
 
-        dishContainer.appendChild(n);
+        $( "#menuContainer" ).append( $( typeContainer ) );
+       // document.body.appendChild(typeContainer);
+        this.buildBR();
+    },
+
+
+
+    'buildLine':function(_dishContainer, _dishType, _i) {
+
+        var nameCont = document.createElement('div');
+        var descrCont = document.createElement('div');
+        var priceCont = document.createElement('div');
+
+        var n = document.createTextNode(Menu.categories[_dishType].data[_i].name);
+        var d = document.createTextNode(Menu.categories[_dishType].data[_i].description);
+        var p = document.createTextNode(Menu.categories[_dishType].data[_i].price + "$");
+
+        nameCont.className = "dishName";
+        descrCont.className = "dishDescription";
+        priceCont.className = "dishPrice";
+
+        nameCont.appendChild(n);
+        descrCont.appendChild(d);
+        priceCont.appendChild(p);
+
+        _dishContainer.appendChild(nameCont);
+        _dishContainer.appendChild(descrCont);
+        _dishContainer.appendChild(priceCont);
     }
-
 }
 
