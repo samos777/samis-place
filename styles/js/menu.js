@@ -41,13 +41,13 @@ Menu = {
                     {
                         name:"Sami's Sausage ",
                         description: "3 big sausages of fresh lamb meat with a side dish. ",
-                        price:35
+                        price:30
                     },
 
                     {
                         name:"Sami's Special Salad ",
                         description:"Chicken Breast, Lettuce, Tomatos, Cucumbers, Onions, Mushrooms with a bun of bread. ",
-                        price:35
+                        price:28
                     }
                 ]
             },
@@ -165,6 +165,8 @@ Menu = {
         _dishContainer.appendChild(nameCont);
         _dishContainer.appendChild(descrCont);
         _dishContainer.appendChild(priceCont);
-    }
+    },
+
+
 }
 
