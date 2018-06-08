@@ -1,13 +1,17 @@
-.mySlider img {
+#forSlider {
+  text-align: center;
+}
+
+#forSlider #wrapper img {
   max-width: 900px;
   max-height: 800px;
 }
 
-#eventBar .row .col-xs-3 .eventBarTitle {
+#eventBar .row .eventItem .eventBarTitle {
   color: whitesmoke;
 }
 
-#eventBar .row .col-xs-3 .eventImg {
+#eventBar .row .eventItem .eventImg {
   max-height: 200px;
   max-width: 200px;
 }

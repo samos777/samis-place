@@ -1,41 +1,34 @@
 
+#forSlider{
+  text-align: center;
 
 
-    //
-    //#navi {
-    //  background-color: black;
-    //
-    //  #myNavbar {
-    //    font-size: 140%;
-    //    background-color: transparent;
-    //
-    //    #navContents {
-    //      text-align: center;
-    //      position: relative;
-  //    }
-  //    }
-  //  }
-  //}
+  #wrapper{
 
-
-
-.mySlider{
-
-  img{
-    max-width: 900px;
-    max-height: 800px;
-    &:hover{
+    img{
+      max-width: 900px;
+      max-height: 800px;
+      &:hover{
+      }
     }
   }
 
+
 }
+
+
+
+
+
+
+
 
 
 #eventBar{
 
   .row{
 
-    .col-xs-3{
+    .eventItem{
 
       .eventBarTitle{
         color:whitesmoke;
@@ -53,7 +46,6 @@
 
 
 }
-
 
 
 @media only screen and (max-width: 600px) {
