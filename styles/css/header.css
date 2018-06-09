@@ -30,3 +30,7 @@ body #header #logo {
 #navCont #myNav #myNavbar #navList .menuItem {
   color: #FAE6B0;
 }
+
+#navCont #myNav #myNavbar #navList .menuItem:hover {
+  color: #D7B55C;
+}

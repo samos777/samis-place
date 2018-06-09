@@ -10,8 +10,6 @@ body {
 
     }
   }
-
-
 }
 
 
@@ -35,13 +33,14 @@ body {
         font-family: 'Yatra One', cursive;
 
         .menuItem{
-
           color:#FAE6B0;
 
+          &:hover {
+            color: #D7B55C;
+          }
+
+          }
         }
-
-
       }
     }
   }
-}
