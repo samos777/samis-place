@@ -1,0 +1,44 @@
+#eventMiddle{
+
+  h1{
+    font-family: 'Abril Fatface', cursive;
+    color:#FAE6B0;
+  }
+  p{
+   color: #FAE6B0;
+  }
+
+  .eventContainer{
+    margin: 2.5%;
+    max-width: 100%;
+
+    .picCon{
+      float:left;
+      margin-right: 2%;
+      img{
+
+        max-height: 250px;
+        max-width: 350px;
+      }
+    }
+
+    .textEvent{
+
+      color:#FAE6B0;
+      position:center;
+      padding-right: 25%;
+
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .eventContainer{
+
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+}
+
