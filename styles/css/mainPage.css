@@ -8,7 +8,8 @@
 }
 
 #eventBar .row .eventItem .eventBarTitle {
-  color: whitesmoke;
+  color: #FAE6B0;
+  font-family: 'Yatra One', cursive;
 }
 
 #eventBar .row .eventItem .eventImg {

@@ -27,11 +27,18 @@ body {
       text-align: center;
 
       #navList {
-        font-size: 140%;
+        font-size: 180%;
         background-color: black;
         display: inline-block;
         float: none;
+        color:#FAE6B0;
         font-family: 'Yatra One', cursive;
+
+        .menuItem{
+
+          color:#FAE6B0;
+
+        }
 
 
       }

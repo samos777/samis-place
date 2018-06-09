@@ -1,0 +1,22 @@
+#footer {
+  color: #FAE6B0;
+}
+
+#footer #innerFooter #dataContainer .part .miniTitleFooter {
+  font-family: 'Yatra One', cursive;
+}
+
+#footer #innerFooter #dataContainer .part p {
+  padding-left: 3%;
+}
+
+#footer #innerFooter #dataContainer .part img {
+  padding-left: 3%;
+  padding-bottom: 12%;
+}
+
+#footer #socialMediaBar .social-item {
+  color: #FAE6B0;
+  padding: 2%;
+  margin-bottom: 5%;
+}
