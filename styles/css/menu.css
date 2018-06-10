@@ -7,6 +7,10 @@
   margin: 2.5%;
 }
 
+#myMenu {
+  border: 10px solid #FAE6B0;
+}
+
 .category {
   color: rgba(255, 250, 25, 0.94);
   text-align: left;
