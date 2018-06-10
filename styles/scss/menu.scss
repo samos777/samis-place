@@ -1,5 +1,4 @@
 body{
-  background-color: black;
 }
 
 
@@ -20,7 +19,7 @@ body{
 
 #menuContainer{
 
-  border: 10px solid #FAE6B0;
+  //border: 10px solid #FAE6B0;
 }
 
 
@@ -41,7 +40,6 @@ body{
   .dishName{
     font-weight: bolder;
     font: 200% 'Just Another Hand', Helvetica, sans-serif;
-    text-decoration: underline;
 
   }
   .dishDescription{

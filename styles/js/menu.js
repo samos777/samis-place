@@ -106,7 +106,7 @@ Menu = {
                 this.buildLine(dishContainer,dishType, i);
 
                 // document.body.appendChild(dishContainer)
-                $( "#menuContainer" ).append( $( dishContainer ) );
+                $( "#myMenu" ).append( $( dishContainer ) );
                 this.buildBR();
             }
         }
@@ -117,7 +117,7 @@ Menu = {
     'buildHR':function(){
         var line = document.createElement("HR");
         //document.body.appendChild(line) ;
-        $( "#menuContainer" ).append( $( line ) );
+        $( "#myMenu" ).append( $( line ) );
     },
 
 
@@ -125,7 +125,7 @@ Menu = {
     'buildBR':function(){
         var line = document.createElement("BR");
         // document.body.appendChild(line) ;
-        $( "#menuContainer" ).append( $( line ) );
+        $( "#myMenu" ).append( $( line ) );
         },
 
 
@@ -137,7 +137,7 @@ Menu = {
         var t = document.createTextNode(Menu.categories[_dishType].title);     // Create a text node
         typeContainer.appendChild(t);
 
-        $( "#menuContainer" ).append( $( typeContainer ) );
+        $( "#myMenu" ).append( $( typeContainer ) );
        // document.body.appendChild(typeContainer);
         this.buildBR();
     },

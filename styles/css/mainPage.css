@@ -17,6 +17,10 @@
   max-width: 200px;
 }
 
+#eventBar .row .eventItem p {
+  color: #FAE6B0;
+}
+
 @media only screen and (max-width: 600px) {
   #forSlider {
     display: none;

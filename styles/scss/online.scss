@@ -1,4 +1,4 @@
-#onlineMenuContainer{
+#MenuContainer{
 
   border: none;
 }
@@ -8,4 +8,13 @@
   float:right;
   color:black;
   margin-left: 2%;
+
+}
+
+
+#myCart{
+
+  border: 3px white solid;
+  position:fixed;
+  left:60%;
 }

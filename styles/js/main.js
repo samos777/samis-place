@@ -9,7 +9,7 @@ $(document).ready(function(){
         Menu.buildMenu();
     }
 
-    if(typeof onlineMenuAlt !== 'undefined'){
-        onlineMenuAlt.buildOnlineMenu();
+    if(typeof myCart !== 'undefined'){
+        myCart.displayCart();
     }
 })
