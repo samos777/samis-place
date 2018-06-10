@@ -93,6 +93,13 @@ Menu = {
 
     //functions
 
+
+    'getItem':function(item){
+
+        return;
+    },
+
+
     'buildMenu':function(){
         //print to the HTML the Menu Content
         for(var dishType in Menu.categories)
@@ -103,6 +110,7 @@ Menu = {
             {
                 var dishContainer = document.createElement('div');
                 dishContainer.className = "dishCont";
+                dishContainer.onclick= "menu.getItem()";
                 this.buildLine(dishContainer,dishType, i);
 
                 // document.body.appendChild(dishContainer)

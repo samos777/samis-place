@@ -1,15 +1,11 @@
-#MenuContainer {
-  border: none;
-}
-
-.bothButton {
-  float: right;
-  color: black;
-  margin-left: 2%;
-}
-
-#myCart {
-  border: 3px white solid;
+#menuContainer #spliter #myCart {
+  border: 5px solid #FAE6B0;
   position: fixed;
   left: 60%;
+}
+
+#menuContainer #spliter #myCart h1 {
+  font: 220% 'Merienda One', Helvetica, sans-serif;
+  color: rgba(255, 250, 25, 0.94);
+  text-decoration: underline;
 }

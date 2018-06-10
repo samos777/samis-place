@@ -15,9 +15,15 @@ myCart ={
 
     'resetCart':function(){
 
-       this.totalPrice = 0;
-       this.discount = 0;
-       this.itemCounter = 0;
+        this.totalPrice = 0;
+        this.discount = 0;
+        while(this.itemCounter > 0)
+        {
+            this.cart.pop();
+            this.itemCounter--;
+        }
+
+
     },
 
     'recalculate':function(){
@@ -68,9 +74,14 @@ myCart ={
     'displayCart':function(){
         var cartContainer = document.createElement("div");
         cartContainer.id = "cartContainer";
-        var t = document.createTextNode("Items");
-        cartContainer.appendChild(t);
+        var total = document.createElement("div");
+        total.id = "total";
+        var t = document.createTextNode(this.totalPrice);
+        total.appendChild(t);
+
         $( "#myCart" ).append( $( cartContainer));
+
+        $( "#myCart" ).append( $( total));
 
         $( "#myCart" ).append( $( this.buildAddRemoveButtons()));
 
@@ -80,9 +91,15 @@ myCart ={
 
     'createRow':function(item){
         var tableCont = document.createElement("div");
-        tableCont.classList = ".row rowContainer";
+        tableCont.classList = "row rowContainer";
         $( "#cartContainer" ).append( $( tableCont));
         this.addItem(item);
+
+    },
+
+
+    'destroyRow':function(item){
+
 
     },
 
@@ -98,9 +115,6 @@ myCart ={
         var p = document.createTextNode(item.price + "$");
         itemPriceContainer.appendChild(p);
         $("#cartContainer").append( $(itemPriceContainer));
-
-
-
     },
 
     //buttons
@@ -108,7 +122,11 @@ myCart ={
     'makeEndButtons':function(buttonContent){
 
             var addButton = document.createElement("BUTTON");
-            addButton.className = "addButton";
+            addButton.className = "button";
+            if(buttonContent === "Reset")
+            {
+              addButton.addEventListener("click", this.resetCart());
+            }
             var a = document.createTextNode(buttonContent);
             addButton.appendChild(a);
 
