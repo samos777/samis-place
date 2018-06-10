@@ -103,7 +103,7 @@ Menu = {
             {
                 var dishContainer = document.createElement('div');
                 dishContainer.className = "dishCont";
-                this.buildLine(dishContainer,dishType, i)
+                this.buildLine(dishContainer,dishType, i);
 
                 // document.body.appendChild(dishContainer)
                 $( "#menuContainer" ).append( $( dishContainer ) );

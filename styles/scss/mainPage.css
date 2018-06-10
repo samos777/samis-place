@@ -1,0 +1,33 @@
+body {
+  padding: 0px;
+  background-color: black; }
+  body #header #logo {
+    text-align: center;
+    padding-top: 2.5%; }
+  body #navCont #myNav {
+    background-color: transparent;
+    border: none; }
+    body #navCont #myNav #myNavbar {
+      float: none;
+      text-align: center; }
+      body #navCont #myNav #myNavbar #navList {
+        font-size: 140%;
+        background-color: black;
+        display: inline-block;
+        float: none; }
+
+.mySlider img {
+  max-width: 900px;
+  max-height: 800px; }
+
+#eventBar .row .col-xs-3 .eventBarTitle {
+  color: whitesmoke; }
+#eventBar .row .col-xs-3 .eventImg {
+  max-height: 200px;
+  max-width: 200px; }
+
+@media only screen and (max-width: 600px) {
+  #forSlider {
+    display: none; } }
+
+/*# sourceMappingURL=mainPage.css.map */
