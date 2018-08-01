@@ -8,8 +8,4 @@ $(document).ready(function(){
     if(typeof Menu !== 'undefined'){
         Menu.buildMenu();
     }
-
-    if(typeof myCart !== 'undefined'){
-        myCart.displayCart();
-    }
 })

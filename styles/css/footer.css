@@ -1,4 +1,5 @@
 #footer {
+  overflow: hidden;
   color: #FAE6B0;
 }
 
@@ -19,4 +20,13 @@
   color: #FAE6B0;
   padding: 2%;
   margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+    overflow: hidden;
+  }
+  #footer #innerFooter #dataContainer #rightPart {
+    display: none;
+  }
 }

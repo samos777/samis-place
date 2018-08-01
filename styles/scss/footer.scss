@@ -1,43 +1,49 @@
-#footer{
+#footer {
+  overflow: hidden;
+  color: #FAE6B0;
 
-color:#FAE6B0;
+  #innerFooter {
 
-  #innerFooter{
+    #dataContainer { //row
 
-    #dataContainer{   //row
+      .part { //col
 
-      .part{    //col
-
-        .miniTitleFooter{
-
+        .miniTitleFooter {
           font-family: 'Yatra One', cursive;
-
         }
-        p{
-            padding-left: 3%;
-
+        p {
+          padding-left: 3%;
         }
-        img{
+        img {
           padding-left: 3%;
           padding-bottom: 12%;
-
         }
-
       }
-
     }
-
   }
 
-  #socialMediaBar{
+  #socialMediaBar {
 
-    .social-item{
+    .social-item {
       color: #FAE6B0;
       padding: 2%;
       margin-bottom: 5%;
     }
-
-
   }
+}
 
+@media only screen and (max-width: 600px) {
+  #footer {
+    overflow: hidden;
+
+    #innerFooter {
+
+      #dataContainer {
+
+        #rightPart {
+          display: none;
+        }
+      }
+    }
+  }
 }
